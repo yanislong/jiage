@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding=utf-8 -*-
-#通过给定数据的日期，获取对应的 NRT lerc2 (v3) 数据
+#获取某个点的 NDVI 
 
 
 import json
@@ -11,14 +11,14 @@ import requests
 
 import login_api
 
-def NRT():
-    u = "https://api.gagogroup.cn/api/v3/nrt/"
-    year = "2017/"
+def nrt_lerc():
+    year = "2016/"
     month = "1/"
     day = "1/"
     z = "3/"
     x = "0/"
-    y = "2"
+    y = "2/"
+    u = "https://api.gagogroup.cn/api/v3/nrt/"
     url = u + year + month + day + z + x + y
     header = {"Content-Type":"application/json"}
     header['token'] = login_api.login()
@@ -27,4 +27,4 @@ def NRT():
     print r.url
 
 if __name__ == "__main__":
-    NRT()
+    nrt_lerc()

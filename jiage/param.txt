@@ -1,0 +1,13 @@
+POST http://42.159.233.110:3008/user/login HTTP/1.1
+Host: 42.159.233.110:3008
+Connection: keep-alive
+Content-Length: 65
+Origin: http://beta.gagogroup.cn
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Content-type: application/json;charset=UTF-8
+Accept: */*
+Referer: http://beta.gagogroup.cn/test/jilin_v6/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.8
+
+{"username":"gago","password":"670b14728ad9902aecba32e22fa4f6bd"}
