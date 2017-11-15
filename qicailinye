@@ -17,7 +17,7 @@ def sheetdata():
     param['park'] = "长滩基地" #哪个园区
     param['villageCommunity'] = "长滩一社" #哪个村社
     param['productType'] = "" #哪个产品类型
-    param['breed'] = "红火树" #哪个品种
+    param['breed'] = "银杏" #哪个品种
     r = requests.get(u, params=param, headers=header)
 #    print r.content
     print r.url
