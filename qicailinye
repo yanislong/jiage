@@ -1,0 +1,30 @@
+#!/usr/bin/python
+# -*- coding=utf-8 -*-
+
+import requests
+import threading
+
+url = "http://139.219.190.2:3003/"
+def sheetdata():
+    global url
+    u = url + "parks"
+    header = {}
+    param = {}
+    param['page'] = "1" #哪一页
+    param['limit'] = "3440" #每页数量
+    param['park'] = "长滩基地" #哪个园区
+    param['villageCommunity'] = "长滩一社" #哪个村社
+    param['productType'] = "" #哪个产品类型
+    param['breed'] = "红火树" #哪个品种
+    r = requests.get(u, params=param)
+#    print r.content
+    print r.url
+    print r.headers
+
+
+if __name__ == "__main__":
+#   sheetdata()
+    for i in range(10):
+        for i in range(80):
+            t = threading.Thread(target=sheetdata)
+            t.start()
