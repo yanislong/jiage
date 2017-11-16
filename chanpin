@@ -1,0 +1,7 @@
+GET http://139.219.190.2:3003/product-type-list?park=%E9%95%BF%E6%BB%A9%E5%9F%BA%E5%9C%B0&villageCommunity=%E9%95%BF%E6%BB%A9%E4%B8%80%E7%A4%BE HTTP/1.1
+Host: 139.219.190.2:3003
+Connection: keep-alive
+Accept-Encoding: gzip, deflate
+Accept: */*
+User-Agent: python-requests/2.18.4
+
