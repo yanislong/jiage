@@ -1,0 +1,61 @@
+#!/usr/bin/python
+# -*- coding=utf-8 -*-
+
+import requests
+import threading
+import re
+
+cs ="长滩一社","长滩三社","长滩二社"]
+chanpin = ["宿根","球苗","砧木","低干小乔","中干小乔","行道乔木","灌丛苗","地被苗","单干小苗","骨干大乔","高干小乔"]
+
+park = "长滩基地"
+villageCommunity = "长滩一社"
+productType = "宿根"
+url = "http://139.219.190.2:3003/park-list"
+url1 = "http://139.219.190.2:3003/parks/" + park + "/village-community-list"
+url2 = "http://139.219.190.2:3003/parks/" + park + "/village-communities/" + villageCommunity + "/product-type-list"
+url3 = "http://139.219.190.2:3003/parks/" + park + "/village-communities/" + villageCommunity + "/product-Types/" + productType + "/breed-list"
+def yuanqu():
+    global url
+    header = {}
+    r = requests.get(url)
+    print r.content
+    print r.url
+    print r.headers
+    
+def cunshe():
+    global url1
+    header = {}
+    param = {'park':"长滩基地"}
+    r = requests.get(url1)
+    print r.content
+    print r.url
+    print r.headers
+
+def prodect():
+    global url2
+    header = {}
+    r = requests.get(url2)
+    print r.content
+    print r.url
+ #   print r.headers
+
+def pinzhong():
+    global url3
+    u = url + "parks"
+    header = {}
+    r = requests.get(url3)
+    print r.url
+    print r.content
+#    print r.headers
+
+if __name__ == "__main__":
+    print ">>园区"
+    yuanqu()
+    print ">>村社"
+    cunshe()
+    print ">>产品类型"
+    prodect()
+    print ">>品种"
+    pinzhong()
+
