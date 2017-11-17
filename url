@@ -1,1 +1,4 @@
-http://pressure.test.gagogroup.cn/login.html
+GET https://api.gagogroup.cn/api/v3/weather/forecast?lat=31.9504&lon=106.62242&hrs=1&features=[tmp,apcp,rh,wnd_spd]&token=gdc_longrun HTTP/1.1
+User-Agent: Fiddler
+Host: api.gagogroup.cn
+
